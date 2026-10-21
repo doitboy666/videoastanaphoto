@@ -6,6 +6,8 @@
 <title>Видеосъёмка и фотосъёмка в Астане — той, свадьба, тусау кесу | Video Astana Photo</title>
 <meta name="description" content="Видеограф и фотограф в Астане: съёмка тоя, свадьбы, узату, тусау кесу, юбилея, концертов и конференций. Камеры, дрон, монтаж. Цена от 35 000 ₸. Узнайте стоимость в WhatsApp.">
 <link rel="canonical" href="https://videoastanaphoto.kz/">
+<link rel="alternate" hreflang="ru" href="https://videoastanaphoto.kz/">
+<link rel="alternate" hreflang="kk" href="https://videoastanaphoto.kz/kz/">
 <meta name="robots" content="index,follow">
 <meta name="geo.region" content="KZ-AST">
 <meta name="geo.placename" content="Астана">
@@ -60,139 +62,7 @@
 }
 </script>
 
-<style>
-:root{
-  --night:#1E1424; --deep:#2A1C31; --ivory:#F2E9DC; --mute:#B9AAB8; --gold:#D4A84B; --rec:#E0483E; --wa:#25D366;
-  --display:"Unbounded",system-ui,sans-serif; --body:"Manrope",system-ui,sans-serif;
-}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-body{color-scheme:dark;background:var(--night);color:var(--ivory);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
-img{display:block;max-width:100%;height:auto}
-a{color:inherit}
-:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
-h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.15;letter-spacing:-.01em}
-h2{font-size:clamp(26px,3.6vw,40px);margin-bottom:14px}
-.sub{color:var(--mute);max-width:60ch;margin-bottom:36px}
-section{padding:88px 0}
-
-.btn{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;background:var(--gold);color:var(--night);font:700 16px var(--body);text-decoration:none;padding:14px 24px;border-radius:999px;border:0;cursor:pointer}
-.btn:hover{background:#E2BC66}
-.btn.wa{background:var(--wa);color:#0B2915}
-.btn.wa:hover{background:#3BE07A}
-.btn svg{width:20px;height:20px;flex:none}
-.link{color:var(--ivory);font-weight:700;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px}
-
-/* nav */
-.nav{position:fixed;inset:0 0 auto;z-index:10;padding:12px 0;background:rgba(30,20,36,.86);backdrop-filter:blur(10px)}
-.nav .wrap{display:flex;align-items:center;gap:26px}
-.logo{font:800 15px var(--display);text-decoration:none;margin-right:auto}
-.nav .m{text-decoration:none;color:var(--mute);font-size:15px}
-.nav .m:hover{color:var(--ivory)}
-.nav .tel{font-weight:700;text-decoration:none;font-size:15px}
-.nav .btn{padding:10px 18px;font-size:15px}
-@media(max-width:900px){.nav .m{display:none}}
-@media(max-width:560px){.nav .tel{display:none}.logo{font-size:13px}.nav .btn{padding:9px 14px;font-size:14px}}
-
-/* hero */
-.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
-.hero>video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 30%}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,20,36,.92) 0%,rgba(30,20,36,.6) 45%,rgba(30,20,36,.1) 100%),linear-gradient(0deg,rgba(30,20,36,.9),transparent 45%)}
-.vf{position:absolute;inset:max(72px,9vh) max(16px,3vw) max(20px,3vh);pointer-events:none;z-index:1}
-.vf i{position:absolute;width:40px;height:40px;border:2px solid rgba(242,233,220,.8)}
-.vf i:nth-child(1){top:0;left:0;border-width:2px 0 0 2px}
-.vf i:nth-child(2){top:0;right:0;border-width:2px 2px 0 0}
-.vf i:nth-child(3){bottom:0;left:0;border-width:0 0 2px 2px}
-.vf i:nth-child(4){bottom:0;right:0;border-width:0 2px 2px 0}
-.hud{position:absolute;top:16px;left:20px;right:20px;display:flex;justify-content:space-between;font:600 13px var(--display);letter-spacing:.04em}
-.rec{display:flex;align-items:center;gap:8px}
-.rec::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--rec);animation:blink 1.2s steps(1) infinite}
-@keyframes blink{50%{opacity:0}}
-@media(prefers-reduced-motion:reduce){.rec::before{animation:none}}
-.hero .wrap{position:relative;z-index:2;width:100%;padding-top:140px;padding-bottom:max(72px,10vh)}
-.hero h1{font-size:clamp(30px,5.2vw,64px);font-weight:800;max-width:17ch;margin-bottom:18px}
-.hero .lead{font-size:clamp(17px,1.6vw,20px);max-width:44ch;margin-bottom:22px}
-.checks{list-style:none;padding:0;display:grid;gap:8px;margin-bottom:30px}
-.checks li{display:flex;gap:10px;align-items:baseline}
-.checks li::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:var(--gold);transform:translateY(-1px)}
-.cta{display:flex;gap:14px 22px;flex-wrap:wrap;align-items:center}
-.price-hint{color:var(--mute);font-size:15px;margin-top:16px}
-
-/* services */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:var(--deep);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
-.card img{aspect-ratio:16/10;object-fit:cover;width:100%}
-.card .b{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
-.card h3{font-size:19px}
-.card p{color:var(--mute);font-size:16px;flex:1}
-.card .row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:6px}
-.card b{font:700 18px var(--display);color:var(--gold);white-space:nowrap}
-.card .link{font-size:15px;white-space:nowrap}
-.card.big{grid-column:span 2}
-.card.big img{aspect-ratio:16/8}
-@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}.card.big{grid-column:span 2}}
-@media(max-width:600px){.cards{grid-template-columns:1fr}.card.big{grid-column:auto}.card.big img{aspect-ratio:16/10}}
-
-/* get */
-.get{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
-.get img{border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%}
-.get img.portrait{aspect-ratio:4/5;max-height:620px;object-position:50% 20%}
-.get ul{list-style:none;padding:0;display:grid;gap:18px}
-.get li strong{display:block;font-size:18px}
-.get li span{color:var(--mute)}
-@media(max-width:860px){.get{grid-template-columns:1fr;gap:32px}}
-
-/* prices */
-.prices{background:var(--deep)}
-.plist{border-top:1px solid rgba(242,233,220,.15)}
-.plist>div{display:grid;grid-template-columns:1fr auto auto;gap:6px 28px;align-items:center;padding:24px 0;border-bottom:1px solid rgba(242,233,220,.15)}
-.plist h3{font-size:clamp(17px,2vw,21px)}
-.plist p{color:var(--mute);grid-column:1;font-size:16px}
-.plist b{font:700 clamp(19px,2.3vw,26px) var(--display);color:var(--gold);white-space:nowrap;grid-row:1/3;grid-column:2}
-.plist .link{grid-row:1/3;grid-column:3;font-size:15px;white-space:nowrap}
-@media(max-width:640px){.plist>div{grid-template-columns:1fr;gap:6px}.plist h3,.plist b,.plist p,.plist .link{grid-row:auto;grid-column:1}.plist .link{justify-self:start;margin-top:4px}}
-.note{color:var(--mute);margin-top:22px;font-size:15px}
-
-/* steps */
-.steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
-.steps li{counter-increment:s;border-top:2px solid var(--gold);padding-top:16px}
-.steps li::before{content:counter(s);font:800 34px var(--display);color:var(--gold);display:block;margin-bottom:8px}
-.steps strong{display:block;font-size:18px;margin-bottom:6px}
-.steps span{color:var(--mute);font-size:16px}
-@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.steps{grid-template-columns:1fr}}
-
-/* faq */
-.faq details{border-bottom:1px solid rgba(242,233,220,.15);padding:18px 0}
-.faq summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font:700 22px var(--display);color:var(--gold);line-height:1}
-.faq details[open] summary::after{content:"−"}
-.faq p{color:var(--mute);margin-top:10px;max-width:70ch}
-
-/* order */
-.order{display:grid;grid-template-columns:1fr 1fr;gap:56px}
-@media(max-width:860px){.order{grid-template-columns:1fr;gap:32px}}
-form{display:grid;gap:14px;background:var(--deep);padding:28px;border-radius:14px}
-label{display:grid;gap:6px;font-size:14px;color:var(--mute)}
-input,select,textarea{font:inherit;color:var(--ivory);background:var(--night);border:1px solid rgba(242,233,220,.2);border-radius:8px;padding:13px 14px;width:100%}
-input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:none}
-textarea{min-height:100px;resize:vertical}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:520px){.two{grid-template-columns:1fr}}
-form .btn{justify-content:center}
-.contacts{display:grid;gap:10px;margin-top:26px}
-.contacts a{font:700 21px var(--display);text-decoration:none}
-.contacts a:hover{color:var(--gold)}
-
-footer{padding:36px 0 96px;color:var(--mute);font-size:14px;border-top:1px solid rgba(242,233,220,.1)}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px 24px}
-
-/* sticky WhatsApp */
-.fab{position:fixed;right:16px;bottom:16px;z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.35)}
-@media(min-width:900px){.fab span{display:none}.fab{padding:16px;border-radius:50%}}
-</style>
+<link rel="stylesheet" href="/style.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8J325X86KR"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-8J325X86KR');</script>
 </head>
@@ -202,8 +72,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px 
   <a class="logo" href="#top">Video Astana Photo</a>
   <a class="m" href="#uslugi">Услуги</a>
   <a class="m" href="#ceny">Цены</a>
-  <a class="m" href="#kak">Как работаем</a>
-  <a class="m" href="#faq">Вопросы</a>
+  <a class="m x" href="#kak">Как работаем</a>
+  <a class="m x" href="#faq">Вопросы</a>
+  <a class="m" href="/kz/" hreflang="kk">Қазақша</a>
   <a class="tel" href="tel:+77784714585">+7 778 471 45 85</a>
   <a class="btn" href="#zayavka">Узнать цену</a>
 </div></nav>
@@ -260,6 +131,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px 
       <div class="row"><b>от 35 000 ₸</b><a class="link" href="#zayavka" data-type="Деловое мероприятие">Узнать цену</a></div></div>
     </article>
   </div>
+  <p class="sub" style="margin:28px 0 12px">Подробнее о каждой услуге:</p>
+  <div class="related"><a href="/svadba/">Свадьба</a><a href="/toy/">Той</a><a href="/uzatu/">Узату</a><a href="/tusau-kesu/">Тусау кесу</a><a href="/love-story/">Love story</a><a href="/konferencii/">Конференции и реклама</a><a href="/kz/" hreflang="kk">Қазақша</a></div>
 </div></section>
 
 <section><div class="wrap get">
@@ -344,34 +217,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px 
 </main>
 
 <footer><div class="wrap">
+  <nav class="foot-links" aria-label="Услуги"><a href="/svadba/">Свадьба</a><a href="/toy/">Той</a><a href="/uzatu/">Узату</a><a href="/tusau-kesu/">Тусау кесу</a><a href="/love-story/">Love story</a><a href="/konferencii/">Конференции и реклама</a><a href="/kz/" hreflang="kk">Қазақша</a></nav>
   <span>© Video Astana Photo — видеосъёмка и фотосъёмка мероприятий в Астане. +7 778 471 45 85</span>
   <span>Фото и видео — из наших съёмок</span>
 </div></footer>
 
 <a class="btn wa fab" href="https://wa.me/77784714585" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.2Z"/></svg><span>WhatsApp</span></a>
 
-<script>
-// viewfinder timecode
-const tc=document.getElementById('tc'),t0=performance.now(),p=n=>String(n).padStart(2,'0');
-if(!matchMedia('(prefers-reduced-motion: reduce)').matches)(function tick(){
-  const f=Math.floor((performance.now()-t0)/40),s=Math.floor(f/25);
-  tc.textContent=`${p(Math.floor(s/3600))}:${p(Math.floor(s/60)%60)}:${p(s%60)}:${p(f%25)}`;
-  requestAnimationFrame(tick)})();
-// "Узнать цену" on a service preselects it in the form
-document.querySelectorAll('[data-type]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('type').value=a.dataset.type}));
-// form -> WhatsApp
-// analytics: phone / WhatsApp clicks, where on the page they happened
-document.addEventListener('click',e=>{
-  const a=e.target.closest('a[href^="tel:"],a[href*="wa.me"]');if(!a||!window.gtag)return;
-  const where=a.classList.contains('fab')?'floating':(a.closest('section,header,nav,footer')?.id||a.closest('section,header,nav,footer')?.tagName.toLowerCase()||'page');
-  gtag('event',a.href.startsWith('tel:')?'click_phone':'click_whatsapp',{link_location:where});
-});
-document.getElementById('f').addEventListener('submit',e=>{
-  e.preventDefault();const d=new FormData(e.target);
-  if(window.gtag)gtag('event','generate_lead',{form_type:d.get('type')});
-  const txt=`Здравствуйте! Заявка с сайта.\nИмя: ${d.get('name')}\nМероприятие: ${d.get('type')}\nДата: ${d.get('date')||'—'}\n${d.get('msg')}`;
-  location.href='https://wa.me/77784714585?text='+encodeURIComponent(txt.trim());
-});
-</script>
+<script src="/site.js"></script>
 </body>
 </html>
