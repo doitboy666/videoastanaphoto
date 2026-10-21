@@ -193,6 +193,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px 
 .fab{position:fixed;right:16px;bottom:16px;z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 @media(min-width:900px){.fab span{display:none}.fab{padding:16px;border-radius:50%}}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WS9JP3L6KN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-WS9JP3L6KN');</script>
 </head>
 <body>
 
@@ -358,8 +360,15 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches)(function tick(){
 // "Узнать цену" on a service preselects it in the form
 document.querySelectorAll('[data-type]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('type').value=a.dataset.type}));
 // form -> WhatsApp
+// analytics: phone / WhatsApp clicks, where on the page they happened
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href^="tel:"],a[href*="wa.me"]');if(!a||!window.gtag)return;
+  const where=a.classList.contains('fab')?'floating':(a.closest('section,header,nav,footer')?.id||a.closest('section,header,nav,footer')?.tagName.toLowerCase()||'page');
+  gtag('event',a.href.startsWith('tel:')?'click_phone':'click_whatsapp',{link_location:where});
+});
 document.getElementById('f').addEventListener('submit',e=>{
   e.preventDefault();const d=new FormData(e.target);
+  if(window.gtag)gtag('event','generate_lead',{form_type:d.get('type')});
   const txt=`Здравствуйте! Заявка с сайта.\nИмя: ${d.get('name')}\nМероприятие: ${d.get('type')}\nДата: ${d.get('date')||'—'}\n${d.get('msg')}`;
   location.href='https://wa.me/77784714585?text='+encodeURIComponent(txt.trim());
 });
